@@ -15,6 +15,12 @@
       <input type="text" value="" ng-model="locationIn" placeholder="Location">
       <button ng-click='addRecord()'>Add</button>
       <button ng-click='getRecords()'>Read</button>
+
+    <div id="displayDiv" ng-repeat="record in allTheRecords">
+      <div>
+        <p>{{record.name}} {{record.location}}</p>
+      </div>
+    </div>
     </div>
   </body>
 </html>
